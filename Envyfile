@@ -1,0 +1,10 @@
+project_config:
+  name: minecraft
+  image: 'Ubuntu 12.04 cloudimg amd64'
+  remote_user: ubuntu
+  flavor_name: m1.large
+  provision_scripts:
+    - provision.sh
+  sec_groups:
+    - tcp, 22, 22, 0.0.0.0/0 
+    - tcp, 25565, 25565, 0.0.0.0/0
